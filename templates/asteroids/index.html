@@ -1,0 +1,19 @@
+{% extends "asteroids/layout.html" %}
+
+{% block head %}
+
+{% endblock %}
+
+{% block title %}
+     Asteroids
+{% endblock %}
+
+{% block body %}
+
+    <!-- Asteroid game canvas and script -->
+    <canvas id="asteroids-canvas"></canvas>
+
+    {% load static %}
+    <script src="{% static 'asteroids\scripts\asteroids.js' %}"></script>
+
+{% endblock %}
